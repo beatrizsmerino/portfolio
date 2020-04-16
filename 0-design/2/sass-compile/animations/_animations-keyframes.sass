@@ -1,0 +1,38 @@
+// TOOLS
+// keyframes
+// ------------------
+
+
+
+
+// MIXIN - FADE
+// =================================================
+@include t-keyframes(fadeIn)
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
+@include t-keyframes(fadeOut)
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
+
+// MIXIN - SLIDE
+// =================================================
+@include t-keyframes(topBottom)
+  0%
+    top: -100%
+  100%
+    top: 0
+
+
+@include t-keyframes(bottomTop)
+  0%
+    top: 0
+  100%
+    top: -100%

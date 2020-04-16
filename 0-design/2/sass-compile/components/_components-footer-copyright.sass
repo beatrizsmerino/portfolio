@@ -1,0 +1,34 @@
+// COMPONENTS
+// footer-copyright
+// ------------------
+
+
+
+
+// FOOTER COPYRIGHT
+// =================================================
+.c-copyright
+  padding: 15px
+  border-top: 2px solid $s-black
+  text-align: center
+
+  p
+    >*
+      &:not(:last-child):after
+        content: '|'
+        display: inline-block
+        padding: 0 10px
+
+
+
+
+// MEDIA QUERIES
+// =================================================
+@media only screen and (max-width: $md)
+  .c-copyright
+    p
+      >*
+        display: block
+
+        &:not(:last-child):after
+          display: none

@@ -1,0 +1,85 @@
+// MEDIA
+// width
+// ------------------
+
+
+
+
+// MEDIA QUERIES - C-COL (XL-LG-MD-SM-XS)
+// =================================================
+// This file need the files:
+// settings > _settings-variables-media.sass
+// media > _media-width.sass
+//
+//
+// use example:
+// <ul class="c-col--xl-4 c-col--lg-4 c-col--md-12 c-col--sm-12 c-col--xs-12"></ul>
+
+
+
+
+// MIXIN - MEDIA
+// =================================================
+
+@mixin media($format,$px)
+  $from : 0
+  $to: 12
+
+
+  @for $i from $from to $to
+    $unit: (100 / 12)
+    $num: ($i + 1)
+
+    .c-col--#{$format}-#{$num}
+      width: ( 100 - ($unit * (($to - 1) - $i)) )#{%}
+
+
+
+
+// XL - large desktops
+// =================================================
+// Large devices (large desktops, 1200px and up)
+// @media (min-width: @screen-xl-min)
+
+@media only screen and (min-width: $xl)
+  @include media('xl',$xl)
+
+
+
+// LG - large desktops
+// =================================================
+// Large devices (large desktops, 1200px - 992px)
+// @media (min-width: @screen-lg-min)
+
+@media only screen and (max-width: $xl - 1) and (min-width: $lg)
+  @include media('lg',$lg)
+
+
+
+// MD - large tablets
+// =================================================
+// Medium devices (desktops, 992px - 768px)
+// @media (min-width: @screen-md-min)
+
+@media only screen and (max-width: $lg - 1) and (min-width: $md)
+  @include media('md',$md)
+
+
+
+// SM - tablets
+// =================================================
+// Small devices (tablets, 768px - 576px)
+// @media (min-width: @screen-sm-min)
+
+@media only screen and (max-width: $md - 1) and (min-width: $sm)
+  @include media('sm',$sm)
+
+
+
+// XS - phones
+// =================================================
+// Extra small devices (phones, 576px - 480px)
+// No media query since this is the default
+
+@media only screen and (max-width: $sm - 1)
+  @include media('xs',$xs)
