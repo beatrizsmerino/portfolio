@@ -1,0 +1,374 @@
+doctype html
+html
+  head
+    title
+    link(rel="stylesheet" href="css/lib/icomoon/fonts-min.css")
+    link(rel="stylesheet" href="css/lib/swiper-min.css")
+    link(rel="stylesheet" href="css/styles-min.css")
+    
+  body
+    // HEADER
+    header
+      div(class="c-button--nav")
+        span(class="icon icon-dots-three-horizontal")
+        
+      nav
+        ul(class="c-list--no")
+          li
+            a(href="#portfolio") portfolio
+          li
+            a(href="#about") about
+          li
+            a(href="#blog") blog
+          li
+            a(href="#shop") shop
+          li
+            a(href="#contact") contact
+    // END HEADER
+    
+    
+    // MAIN
+    main
+      // SLIDER
+      // =================================================
+      section(class="c-slider")
+        div(class="c-content")
+          div(class="c-logo")
+            img(class="c-img" src="media/img/logo.jpg" alt="")
+          ul(class="c-social-media c-list--no")
+            li
+              a(href="https://www.facebook.com/")
+                span(class="icon icon-facebook")
+            li
+              a(href="https://www.twitter.com/")
+                span(class="icon icon-twitter")
+            li
+              a(href="https://www.instagram.com/")
+                span(class="icon icon-instagram")
+            li
+              a(href="https://wwww.plus.google.com/")
+                span(class="icon icon-google-plus")
+        // Swiper
+        div(class="swiper-container")
+          div(class="swiper-wrapper")
+            div(class="swiper-slide c-img c-slider--img1")
+              p(class="c-button") Slide 01
+            div(class="swiper-slide c-img c-slider--img2")
+              p(class="c-button") Slide 02
+            div(class="swiper-slide c-img c-slider--img3")
+              p(class="c-button") Slide 03
+            div(class="swiper-slide c-img c-slider--img4")
+              p(class="c-button") Slide 04
+            div(class="swiper-slide c-img c-slider--img5")
+              p(class="c-button") Slide 05
+            div(class="swiper-slide c-img c-slider--img6")
+              p(class="c-button") Slide 06
+            div(class="swiper-slide c-img c-slider--img7")
+              p(class="c-button") Slide 07
+            div(class="swiper-slide c-img c-slider--img8")
+              p(class="c-button") Slide 08
+            div(class="swiper-slide c-img c-slider--img9")
+              p(class="c-button") Slide 09
+            div(class="swiper-slide c-img c-slider--img10")
+              p(class="c-button") Slide 10
+          // Add Pagination
+          div(class="swiper-pagination")
+          
+      // PORTFOLIO
+      // =================================================
+      section(id="portfolio" class="c-portfolio")
+        div(class="o-inner")
+          div(class="c-title")
+            h2 PORTFOLIO
+            h3 DISPLAY YOUR LATEST WORK IN A BEAUTIFUL. DYNAMIC PHOTO STREAM
+          div(class="c-content")
+            ul(class="c-list--no c-portfolio-nav isotope-filter-button-group")
+              li(class="c-button c-portfolio--all active" data-filter="*") all
+              li(class="c-button c-portfolio--animals" data-filter=".c-portfolio-gallery--animals") animals
+              li(class="c-button c-portfolio--portraits" data-filter=".c-portfolio-gallery--portraits") portraits
+              li(class="c-button c-portfolio--landscapes" data-filter=".c-portfolio-gallery--landscapes") landscapes
+                
+            div(class="c-portfolio-gallery")
+              div(class="isotope-grid o-wrapper")
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img1")
+                    div(class="o-content")
+                      h4 1
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img2")
+                    div(class="o-content")
+                      h4 2
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img3")
+                    div(class="o-content")
+                      h4 3
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--square")
+                  div(class="c-img c-portfolio-gallery--img4")
+                    div(class="o-content")
+                      h4 4
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img5")
+                    div(class="o-content")
+                      h4 5
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--square")
+                  div(class="c-img c-portfolio-gallery--img6")
+                    div(class="o-content")
+                      h4 6
+                      p animals  
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img7")
+                    div(class="o-content")
+                      h4 7
+                      p portraits    
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img8")
+                    div(class="o-content")
+                      h4 8
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img9")
+                    div(class="o-content")
+                      h4 9
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--square")
+                  div(class="c-img c-portfolio-gallery--img10")
+                    div(class="o-content")
+                      h4 10
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img11")
+                    div(class="o-content")
+                      h4 11
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img12")
+                    div(class="o-content")
+                      h4 12
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img13")
+                    div(class="o-content")
+                      h4 13
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--square")
+                  div(class="c-img c-portfolio-gallery--img14")
+                    div(class="o-content")
+                      h4 14
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img15")
+                    div(class="o-content")  
+                      h4 15
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--square")
+                  div(class="c-img c-portfolio-gallery--img16")
+                    div(class="o-content")  
+                      h4 16
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img17")
+                    div(class="o-content")  
+                      h4 17
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img18")
+                    div(class="o-content")  
+                      h4 18
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img19")
+                    div(class="o-content")  
+                      h4 19
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--square")
+                  div(class="c-img c-portfolio-gallery--img20")
+                    div(class="o-content")
+                      h4 20
+                      p portraits                                   
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img21")
+                    div(class="o-content")
+                      h4 21
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img22")
+                    div(class="o-content")
+                      h4 22
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img23")
+                    div(class="o-content")
+                      h4 23
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--square")
+                  div(class="c-img c-portfolio-gallery--img24")
+                    div(class="o-content")
+                      h4 24
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img25")
+                    div(class="o-content")
+                      h4 25
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--square")
+                  div(class="c-img c-portfolio-gallery--img26")
+                    div(class="o-content")
+                      h4 26
+                      p landscapes
+                article(class="isotope-grid-item c-portfolio-gallery--animals c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img27")
+                    div(class="o-content")
+                      h4 27
+                      p animals
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--vertical")
+                  div(class="c-img c-portfolio-gallery--img28")
+                    div(class="o-content")
+                      h4 28
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--portraits c-img--horizontal")
+                  div(class="c-img c-portfolio-gallery--img29")
+                    div(class="o-content")
+                      h4 29
+                      p portraits
+                article(class="isotope-grid-item c-portfolio-gallery--landscapes c-img--square")
+                  div(class="c-img c-portfolio-gallery--img30")
+                    div(class="o-content")
+                      h4 30
+                      p landscapes  
+                    
+                    
+      // ABOUT
+      // =================================================              
+      section(id="about" class="c-about")
+        div(class="o-inner")
+          div(class="c-title")
+            h2 OUR STORY
+            h3 WE`VE SERIOUS ABOUT WEBSITES THAT LOOK STUNNING AND SIMLY WORK
+          div(class="c-content")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, exercitationem repellendus expedita ab accusantium molestias ipsam debitis, alias dolor reprehenderit iste architecto nemo error ullam nihil quisquam modi, eius quidem!
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod optio saepe eos vitae excepturi ut, veritatis sint, id totam reiciendis magni, ex enim libero aut. Saepe ab nulla nihil.
+            span(class="c-button") READ MORE
+      
+      // BLOG
+      // =================================================          
+      section(id="blog" class="c-blog")
+        div(class="o-inner")
+          div(class="c-title")
+            h2 FROM THE BLOG
+            h3 SEE WHAT WE`VE BEEN UP TO LATELY
+
+          div(class="c-content")
+            article
+              div(class="c-img")
+              h4
+                span A MINIMALIST SINGLE COLUMN
+                span BLOG
+            article
+              div(class="c-img")
+              h4
+                span AN OPTIONAL BLOG SIDEBAR
+                span LAYOUT
+            article
+              div(class="c-img")
+              h4
+                span A LOVELY BLOG POST WITH A
+                span VIDEO
+      
+      // SHOP
+      // =================================================              
+      section(id="shop" class="c-shop")
+        span(class="c-button") SHOP THE COLLECTION
+      
+      // CONTACT
+      // =================================================      
+      section(id="contact" class="c-contact")
+        div(class="o-inner")
+          div(class="c-title")
+            h2 GET IN TOUCH
+            h3 WE WOULD LOVE TO HEAR FROM YOU
+
+          div(class="c-content")
+            form(action="" method="")
+              fieldset
+                input(type="text" placeholder="NAME")
+                input(type="text" placeholder="EMAIL")
+                input(type="text" placeholder="SUBJECT")
+              textarea(name="name" placeholder="MENSSAJE")
+              input(type="submit" value="SEND")
+    // END MAIN
+    
+    
+    // ASIDE
+    aside(class="c-aside")
+      // Swiper
+      div(class="swiper-container")
+        div(class="swiper-wrapper")
+            div(class="swiper-slide c-img c-aside--img1")
+            div(class="swiper-slide c-img c-aside--img2")
+            div(class="swiper-slide c-img c-aside--img3")
+            div(class="swiper-slide c-img c-aside--img4")
+            div(class="swiper-slide c-img c-aside--img5")
+            div(class="swiper-slide c-img c-aside--img6")
+            div(class="swiper-slide c-img c-aside--img7")
+            div(class="swiper-slide c-img c-aside--img8")
+            div(class="swiper-slide c-img c-aside--img9")
+            div(class="swiper-slide c-img c-aside--img10")
+    // END ASIDE
+    
+    
+    // FOOTER
+    footer
+      div(class="c-footer-nav")
+        div
+          h6 ABOUT US
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        div
+          h6 SIGN UP FOR NEWS · UPDATES
+          input(type="text" class="search" placeholder="SEARCH")
+          ul(class="c-social-media c-list--no")
+            li
+              a(href="https://www.facebook.com/")
+                span(class="icon icon-facebook")
+            li
+              a(href="https://twitter.com/")
+                span(class="icon icon-twitter")
+            li
+              a(href="https://www.instagram.com/")
+                span(class="icon icon-instagram")
+            li
+              a(href="https://plus.google.com/")
+                span(class="icon icon-google-plus")
+
+        div
+          h6 LATEST POST
+          ul(class="c-list--no")
+            li
+              a(href="") Lorem ipsum dolor sit amet sed
+            li
+              a(href="") Lorem ipsum dolor sit amet sed
+            li
+              a(href="") Lorem ipsum dolor sit amet sed
+            li
+              a(href="") Lorem ipsum dolor sit amet sed
+            li
+              a(href="") Lorem ipsum dolor sit amet sed
+              
+
+      div(class="c-copyright")
+        p 
+          span Copyright 2016 Coastal & Co
+          span Site design handcrafted by Station Seven
+    // END FOOTER
+    
+    // JS - LIB
+    script(src="js/lib/jquery-2.1.4-min.js")
+    script(src="js/lib/swiper-min.js")
+    script(src="js/lib/isotope-pkgd-min.js")
+    // JS - PERSONAL
+    script(src="js/scripts-min.js")

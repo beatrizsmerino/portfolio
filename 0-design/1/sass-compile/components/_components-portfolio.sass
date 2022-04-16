@@ -1,0 +1,185 @@
+// COMPONENTS
+// portfolio
+// ------------------
+
+
+
+
+// SECTION PORTFOLIO
+// =================================================
+.c-portfolio-nav
+  @include t-display--flex
+  @include t-justify-content--center
+
+  >*
+    @include t-margin--right
+    text-transform: uppercase
+    font-size: $s-fontSize--global
+
+  .c-button
+    border-radius: $s-borderRadius--size
+    @include t-button--minimalist-line
+
+  .active
+    color: $s-c1
+    @include t-border($s-c1)
+
+
+
+
+.c-portfolio-gallery
+  margin-top: 5vh
+
+  >div
+    @include t-clearfix--after
+
+  article
+    @include t-width(3)
+    float: left
+    padding: 8px
+
+    >div
+      padding: 20px
+      color: $s-c1
+      font-size: 3em
+      background-color: $s-light
+
+  h4
+    font-size: 1.5em
+
+
+
+  .c-img
+    @include t-background--position-size-repeat
+
+  .c-img--horizontal
+    height: 200px
+
+  .c-img--square
+    height: 300px
+
+  .c-img--vertical
+    height: 450px
+
+
+  article:not(.active)
+    display: none !important
+
+  article.active
+    display: inline-block !important
+
+
+
+// ALL
+.c-portfolio-gallery--img1
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img2
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img3
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img4
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img5
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img6
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img7
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img8
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img9
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img10
+    background-image: url('#{$s-roots--img}default-square.jpg')
+
+// ANIMALS
+.c-portfolio-gallery--img1
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img2
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img3
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img4
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img5
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img6
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img7
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img8
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img9
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img10
+    background-image: url('#{$s-roots--img}default-square.jpg')
+
+// PORTRAITS
+.c-portfolio-gallery--img11
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img12
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img13
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img14
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img15
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img16
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img17
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img18
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img19
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img20
+    background-image: url('#{$s-roots--img}default-square.jpg')
+
+// LANDSCAPES
+.c-portfolio-gallery--img21
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img22
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img23
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img24
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img25
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img26
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img27
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img28
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img29
+    background-image: url('#{$s-roots--img}default-square.jpg')
+.c-portfolio-gallery--img30
+    background-image: url('#{$s-roots--img}default-square.jpg')
+
+
+
+
+// MEDIA QUERIES
+// =================================================
+@media only screen and (max-width: $lg)
+  .c-portfolio
+    @include t-margin--bottom(20px)
+
+  .c-portfolio-gallery
+    >div
+      article
+        @include t-width(2)
+
+// ------------------------------
+
+@media only screen and (max-width: $sm)
+  .c-portfolio-nav
+    min-width: 200px
+    @include t-flex-direction--column
+
+  .c-portfolio-nav >*,
+  .c-portfolio-gallery >div article
+      @include t-width(1)
+      @include t-margin--bottom(2%)
