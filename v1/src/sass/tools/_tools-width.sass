@@ -1,0 +1,27 @@
+// TOOLS
+// width
+// ------------------
+
+
+
+
+// MIXIN - WIDTH WITHOUT MARGIN FOR PADDING
+// =================================================
+@mixin t-width($items)
+  width: #{100% / $items}
+
+
+
+
+// MIXIN - WIDTH WITH MARGIN
+// =================================================
+@mixin t-width--margin($items, $margin: 2)
+  width: #{( ((100% - (($margin * $items) - $margin)) / $items) )}
+
+  @if $items == 1
+    &:not(:last-child)
+      margin-right: 0
+
+  @if $items > 1
+    &:not(:last-child)
+      margin-right: #{$margin+'%'}

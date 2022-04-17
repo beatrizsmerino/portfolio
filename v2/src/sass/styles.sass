@@ -1,0 +1,228 @@
+// =============================================================================
+// INDEX
+// =============================================================================
+
+
+// 1.  SETTINGS........variables
+// 2.  TOOLS...........mixins, extends, functions
+// 3.  GENERICS........reset
+// 4.  VENDORS.........external libraries
+// 5.  ELEMENTS........selector
+// 6.  MEDIA...........media print, media queries
+// 7.  ANIMATIONS......keyframes
+// 8.  OBJECTS.........class (width, height, margin, padding, display, position, float, clearfix, align, direction)
+// 9.  COMPONENTS......modal, button, list (font-family, font-size, color, fill, border, background-color)
+// 10. UTILITIES.......+specifity (pseudo-elements, pseudo-classes, media-queries)
+
+
+
+// 1. SETTINGS
+// =================================================
+// settings-variables-roots..........roots of images
+// settings-variables-fonts..........fonts corporatives
+// settings-variables-colors.........colors corporatives (pantones, hexadecimal)
+// settings-variables-spaces.........margins, paddings
+// settings-variables-borders........border, border radius
+// settings-variables-media..........breakpoints (media queries)
+
+
+// 2. TOOLS
+// =================================================
+// tools-width.......................mixin (width: without margin for padding, with margin)
+// tools-spaces......................mixin (margin, padding)
+// tools-clearfix....................mixin (clearfix: with after, with overflow)
+// tools-position....................mixin (position absolute: center, center left, center right)
+// ------------------------------
+// tools-list........................mixin (list without bullets)
+// tools-button......................mixin (button with modifiers: minimalist, minimalist with background color, corporative)
+// tools-border......................mixin (border css property)
+// tools-image.......................mixin (background image)
+// ------------------------------
+// tools-prefix-flexBox..............mixin (prefix for flexbox)
+// tools-prefix-transform............mixin (prefix for transform css property)
+// tools-prefix-transition...........mixin (prefix for transition css property)
+// tools-prefix-keyframes............mixin (prefix for keyframes css property)
+// tools-prefix-animation............mixin (prefix for animation css property)
+
+
+// 3. GENERICS
+// =================================================
+// generics-reset-ericmeyer..........download Reset Eric Meyer (dont change)
+// generics-reset-normalize..........download Reset Normalize (dont change)
+// ------------------------------
+// generics-reset-particular.........particulary (reset personal complementary to download)
+
+
+// 4. VENDORS
+// =================================================
+// swiper-min.....................download Swiper (dont change)
+
+
+// 5. ELEMENTS
+// =================================================
+// elements-font.....................html, body, h1-h6
+// elements-list.....................ul, ol, li
+// elements-form.....................form, input textarea
+// ------------------------------
+// elements-header...................header, nav
+// elements-main.....................main, section, article
+// elements-aside....................aside
+// elements-footer...................footer
+
+
+// 6. MEDIA
+// =================================================
+// media-print.......................media print
+// media-width.......................media queries
+
+
+// 7. ANIMATIONS
+// =================================================
+// animations-keyframes..............keyframes (css property)
+
+
+// 8. OBJECTS
+// =================================================
+// objects-inner....................layer padding
+
+
+// 9. COMPONENTS
+// =================================================
+// components-image..................formats
+// components-logo...................logo sizes
+// components-title..................title sections
+// components-button.................button (default button, nav button)
+// components-list...................list (without bullets)
+// components-social-media...........social media icons
+// ------------------------------
+// components-swiper.................overwrite styles of swiper library
+// components-isotope................overwrite styles of isotope library
+// ------------------------------
+// components-slider.................section
+// components-portfolio..............section
+// components-about..................section
+// components-blog...................section
+// components-shop...................section
+// components-contact................section
+// ------------------------------
+// components-aside..................aside
+// components-footer-nav.............footer menu
+// components-footer-copyright.......footer copyright
+
+
+// 10. UTILITIES
+// =================================================
+// utilities-active..................js class (header nav, portfolio)
+// utilities-hover...................form, button
+
+
+// =============================================================================
+// END INDEX
+// =============================================================================
+
+
+
+
+
+
+
+
+// SETTINGS
+// =================================================
+@import "settings/settings-variables-roots"
+@import "settings/settings-variables-fonts"
+@import "settings/settings-variables-colors"
+@import "settings/settings-variables-spaces"
+@import "settings/settings-variables-borders"
+@import "settings/settings-variables-media"
+
+
+// TOOLS
+// =================================================
+@import "tools/tools-width"
+@import "tools/tools-spaces"
+@import "tools/tools-clearfix"
+@import "tools/tools-position"
+// ------------------------------
+@import "tools/tools-list"
+@import "tools/tools-button"
+@import "tools/tools-border"
+@import "tools/tools-image"
+// ------------------------------
+@import "tools/tools-prefix-flexBox"
+@import "tools/tools-prefix-transform"
+@import "tools/tools-prefix-transition"
+@import "tools/tools-prefix-keyframes"
+@import "tools/tools-prefix-animation"
+
+
+// GENERICS
+// =================================================
+// @import "generics/generics-reset-ericmeyer"
+// @import "generics/generics-reset-normalize"
+// ------------------------------
+@import "generics/generics-reset-personal"
+
+
+// VENDORS
+// =================================================
+@import "vendors/swiper-min"
+
+	
+// ELEMENTS
+// =================================================
+@import "elements/elements-font"
+@import "elements/elements-list"
+@import "elements/elements-form"
+// ------------------------------
+@import "elements/elements-header"
+@import "elements/elements-main"
+@import "elements/elements-aside"
+@import "elements/elements-footer"
+
+
+// MEDIA
+// =================================================
+@import "media/media-print"
+// @import "media/media-width"
+
+
+// ANIMATIONS
+// =================================================
+@import "animations/animations-keyframes"
+
+
+// OBJECTS
+// =================================================
+@import "objects/objects-inner"
+
+
+// COMPONENTS
+// =================================================
+@import "components/components-logo"
+@import "components/components-title"
+@import "components/components-list"
+@import "components/components-social-media"
+@import "components/components-button"
+@import "components/components-image"
+// ------------------------------
+@import "components/components-swiper"
+@import "components/components-isotope"
+// ------------------------------
+@import "components/components-slider"
+@import "components/components-portfolio"
+@import "components/components-about"
+@import "components/components-blog"
+@import "components/components-shop"
+@import "components/components-contact"
+// ------------------------------
+@import "components/components-aside"
+// ------------------------------
+@import "components/components-footer-nav"
+@import "components/components-footer-copyright"
+
+
+// UTILITIES
+// =================================================
+@import "utilities/utilities-active"
+@import "utilities/utilities-hover"

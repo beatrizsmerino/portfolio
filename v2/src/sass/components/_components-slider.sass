@@ -1,0 +1,55 @@
+// COMPONENTS
+// slider
+// ------------------
+
+
+
+
+// MAIN - SECTION SLIDER
+// =================================================
+.c-slider
+  height: 80vh
+  max-height: 800px
+  min-height: 700px
+  position: relative
+
+  .c-content
+    padding-top: 100px
+    position: relative
+    z-index: 2
+
+
+  // SOCIAL
+  .c-social-media
+    max-width: 400px
+    margin: 40px auto 0
+
+  .icon
+    font-size: 3em
+
+
+  .c-button
+    position: absolute
+    left: 50%
+    bottom: 100px
+    font-size: 1.5em
+    border-width: 3px
+    @include t-transform--translate(-50%,0)
+
+
+  // SWIPER
+  .swiper-container
+    position: absolute
+    top: 0
+
+    .c-img
+      @include t-background--position-size-repeat
+
+  .swiper-slide
+    text-align: center
+    font-size: 18px
+
+
+@for $i from 1 through 10
+  .c-slider--img#{$i}
+    background-image: url('#{$s-roots--img}default-#{$i}.jpg')
