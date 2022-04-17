@@ -1,0 +1,57 @@
+// COMPONENTS
+// footer-nav
+// ------------------
+
+
+
+
+// FOOTER NAV
+// =================================================
+.c-footer-nav
+  padding: $s-section--padding
+  @include t-clearfix--after
+
+  >*
+    @include t-width--margin(3, 5)
+    float: left
+
+  h6
+    margin-bottom: 10px
+    text-align: center
+
+  >div:last-child
+    text-align: center
+
+  input
+    @include t-width(1)
+
+  .c-social-media
+    padding-top: 3vh
+
+  .icon
+    font-size: 1.5em
+
+
+
+@media only screen and (max-width: $lg)
+  .c-footer-nav
+    >*
+      @include t-margin--bottom(40px)
+
+      &:first-child
+        @include t-width--margin(1)
+
+      &:nth-child(2),
+      &:nth-child(3)
+        @include t-width--margin(2)
+
+// ------------------------------
+
+@media only screen and (max-width: $sm)
+  .c-footer-nav
+    >*
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(3)
+        @include t-width--margin(1)
+        @include t-margin--bottom(40px)

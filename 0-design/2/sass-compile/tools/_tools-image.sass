@@ -1,0 +1,34 @@
+// TOOLS
+// image
+// ------------------
+
+
+
+
+// MIXIN - BACKGROUND -- URL-POSITION-SIZE-REPEAT
+// =================================================
+@mixin t-background($url, $position:center, $size:cover, $repeat:no-repeat, $height: 100%)
+  width: 100%
+  height: $height
+  background: url($url) $position/$size $repeat
+
+
+
+
+// MIXIN - BACKGROUND -- POSITION-SIZE-REPEAT
+// =================================================
+@mixin t-background--position-size-repeat($position:center, $size:cover, $repeat:no-repeat, $height:100%)
+  width: 100%
+  height: $height
+  background-position: $position
+  background-size: $size
+  background-repeat: $repeat
+
+
+
+
+// MIXIN - IMAGE -- INVERTED HORIZONTAL
+// =================================================
+@mixin t-image--invertedHorizontal
+  transform: scaleX(-1)
+  filter: FlipH

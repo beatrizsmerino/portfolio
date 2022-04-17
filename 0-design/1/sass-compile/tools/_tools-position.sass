@@ -1,0 +1,36 @@
+// TOOLS
+// mixins-position
+// ------------------
+
+
+
+
+// MIXIN - POSITION CENTER
+// =================================================
+@mixin t-position--center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+
+
+
+// MIXIN - POSITION LEFT
+// =================================================
+@mixin t-position--centerLeft
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translate(0,-50%)
+
+
+
+
+// MIXIN - POSITION RIGHT
+// =================================================
+@mixin t-position--centerRight
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translate(0,-50%)

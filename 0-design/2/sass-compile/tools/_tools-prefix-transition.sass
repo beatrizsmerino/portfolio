@@ -1,0 +1,20 @@
+// TOOLS
+// prefix-transition
+// ------------------
+
+
+
+
+// MIXIN - TRANSITION
+// =================================================
+//
+// use:
+// @include t-transition(opacity, 1.4s, ease-in-out, 0)
+
+
+@mixin t-transition($values...)
+  -webkit-transition: $values
+  -moz-transition: $values
+  -ms-transition: $values
+  -o-transition: $values
+  transition: $values

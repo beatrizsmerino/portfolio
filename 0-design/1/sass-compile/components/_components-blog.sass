@@ -1,0 +1,39 @@
+// COMPONENTS
+// blog
+// ------------------
+
+
+
+
+// SECTION BLOG
+// =================================================
+.c-blog
+  .c-content
+    @include t-clearfix--after
+
+  article
+    @include t-width--margin(3)
+    float: left
+    text-align: center
+
+    .c-img
+      margin-bottom: 20px
+      @include t-background('#{$s-roots--img}default-vertical.jpg', $height: 60vh)
+
+  h4
+    span
+      display: block
+
+      &:last-child
+        font-weight: 300
+
+
+
+
+// MEDIA QUERIES
+// =================================================
+@media only screen and (max-width: $md)
+  .c-blog
+    article
+      @include t-width--margin(1)
+      @include t-margin--bottom(40px)

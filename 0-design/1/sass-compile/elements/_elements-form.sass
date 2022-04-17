@@ -1,0 +1,52 @@
+// ELEMENTS
+// form
+// ------------------
+
+
+
+
+// FORM
+// =================================================
+form
+  >*
+    @include t-margin--bottom
+
+  fieldset
+    @include t-clearfix--after
+
+    >*
+      @include t-width--margin(3)
+      float: left
+
+  textarea
+    width: 100%
+
+
+
+input,
+textarea
+  padding: 10px
+  font-size: $s-fontSize--global
+  border-radius: $s-borderRadius--size
+  @include t-button--minimalist-line
+
+input
+  &[type="submit"],
+  &[type="reset"]
+    width: 100%
+    min-width: 130px
+    font-size: 1.8em
+    font-weight: 900
+    @include t-button--minimalist-backgroundColor
+
+
+
+
+// MEDIA QUERIES
+// =================================================
+@media only screen and (max-width: $md)
+  form
+    fieldset
+      >*
+        @include t-width--margin(1)
+        @include t-margin--bottom(2%)
